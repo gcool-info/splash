@@ -13,8 +13,24 @@ $(document).ready(function() {
 		console.log(emailAddress);
 		
 		if (validateEmail(emailAddress)) {
-			//alert("Email is valid");
 			$('#error').addClass('hidden');
+			$.ajax({
+			    url: 'regUser.php',
+			    type: 'GET',
+			    data: 'email='+emailAddress,
+			    success: function(data) {
+				  //called when successful
+				  console.log("User Successfully Registered"+data);
+				  $( ".email-form" ).html("You have Successfully Registered");
+
+			    },
+			    error: function(e) {
+				   //called when there is an error
+				   console.log(e.message);
+			  }
+			});
+
+		
 		}
 		else {
 			//alert("Please enter a valid email address");
