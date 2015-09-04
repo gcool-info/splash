@@ -1,5 +1,38 @@
+@font-face {
+    font-family: 'akkurat bold';
+    src: url('font/akkurat_bold-custom.eot');
+    src: url('font/akkurat_bold-custom.eot?#iefix') format('embedded-opentype'),
+         url('font/akkurat_bold-custom.woff2') format('woff2'),
+         url('font/akkurat_bold-custom.woff') format('woff'),
+         url('font/akkurat_bold-custom.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'akkurat light';
+    src: url('font/akkurat_light_regular-custom.eot');
+    src: url('font/akkurat_light_regular-custom.eot?#iefix') format('embedded-opentype'),
+         url('font/akkurat_light_regular-custom.woff2') format('woff2'),
+         url('font/akkurat_light_regular-custom.woff') format('woff'),
+         url('font/akkurat_light_regular-custom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'akkurat';
+    src: url('font/akkurat_regular-custom.eot');
+    src: url('font/akkurat_regular-custom.eot?#iefix') format('embedded-opentype'),
+         url('font/akkurat_regular-custom.woff2') format('woff2'),
+         url('font/akkurat_regular-custom.woff') format('woff'),
+         url('font/akkurat_regular-custom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: akkurat light, Arial, sans-serif;
 	max-height: 750px;
 }
 
@@ -59,6 +92,7 @@ body {
 	position:relative;
 	left:-5px;
 	top:-1px;
+	font-family: akkurat bold, Arial, sans-serif;
 }
 
 .email-form #email {
