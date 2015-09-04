@@ -50,7 +50,7 @@ body {
 }
 
 .footer-links {
-	padding-top: 30px;
+	padding: 10px 0px;
 	text-align: center;
 	height: auto;
 }
@@ -88,9 +88,11 @@ body {
 	margin: 0;
 	color: #fff;
 }
+.si-label {
+	padding-right:12px;
+}
 
 .email-form #subscribe {
-	position:relative;
 	left:-5px;
 	top:-1px;
 	font-family: akkurat bold, Arial, sans-serif;
@@ -100,6 +102,7 @@ body {
 	width: 247px;
 	height: 40px;
 	color: #494949;
+	padding-left:12px;
 }
 
 .email-form #subscribe {
@@ -121,7 +124,7 @@ body {
 	text-align: center;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:580px){
 	
 	.test-layer {
 		z-index: 20;
