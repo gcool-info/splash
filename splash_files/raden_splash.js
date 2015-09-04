@@ -13,10 +13,11 @@ $(document).ready(function() {
 		console.log(emailAddress);
 		
 		if (validateEmail(emailAddress)) {
-			alert("Email is valid");
+			//alert("Email is valid");
+			$('#error').addClass('hidden');
 		}
 		else {
-			alert("Please enter a valid email address");
+			//alert("Please enter a valid email address");
 			$('#error').removeClass('hidden');
 		}
 	});
