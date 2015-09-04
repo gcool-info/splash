@@ -1,0 +1,160 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	max-height: 750px;
+}
+
+.container-fluid {
+	max-width: 1024px;
+}
+
+.main-body {
+	background: #000;
+}
+
+.footer {
+	background: #fff;
+}
+
+.footer-links {
+	padding-top: 30px;
+	text-align: center;
+	height: auto;
+}
+
+.footer-links a {
+	color: #494949;
+	font-size: 20px;
+}
+
+#contact-us {
+	padding-right: 75px;
+}
+
+.test-layer {
+	z-index: 20;
+	position: relative;
+	top:-550px;
+}
+
+.luggage {
+	color: #FFF;
+	text-align: center;	
+	font-size: 50px;
+}
+
+.email-form {
+	text-align: center;
+}
+
+.email-form p{
+	display: inline;
+}
+
+.email-form label {
+	margin: 0;
+	color: #fff;
+}
+
+.email-form #subscribe {
+	position:relative;
+	left:-5px;
+	top:-1px;
+}
+
+.email-form #email {
+	width: 247px;
+	height: 40px;
+	color: #494949;
+}
+
+.email-form #subscribe {
+	background-color: #696969;
+	border: none;
+	color: #FFF;
+	height: 40px;
+}
+
+.raden-logo {
+	position: relative;
+	top: 200px;
+	text-align: center;
+}
+
+#error {
+	color:#f00;
+	font-size: 20px;
+}
+
+@media screen and (max-width:480px){
+	
+	.test-layer {
+		z-index: 20;
+		position: relative;
+		top:-375px;
+	}
+	
+	.email-form {
+		text-align: center;
+		width: 300px;
+		position: relative;
+		left: 45px;
+	}
+	
+	.email-form label span{
+		padding-bottom: 10px;
+	}
+	
+	.email-form label{
+		padding-bottom: 10px;
+	}
+	
+	.email-form #subscribe {
+		position:relative;
+		left:0;
+		top:0;
+	}
+	.email-form p{
+		display: block;
+	}
+	
+	.luggage {
+		font-size: 30px;
+	}
+	
+	.raden-logo {
+		position: relative;
+		top: 100px;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 375px) {
+	
+	.email-form {
+		text-align: center;
+		width: 300px;
+		position: relative;
+		left: 25px;
+	}
+	
+}
+
+@media screen and (max-width:320px) {
+	.email-form {
+		text-align: center;
+		width: 300px;
+		position: relative;
+		left: 0;
+		top: 60px;
+	}
+	
+	.footer-links a {
+		font-size: 16px;
+	}
+	
+	.luggage {
+		position: relative;
+		top: 65px;
+	}
+}
