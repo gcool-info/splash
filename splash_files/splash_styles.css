@@ -133,10 +133,12 @@ body {
 	}
 	
 	.email-form {
+		
 		text-align: center;
 		width: 300px;
-		position: relative;
-		left: 45px;
+		margin-left: auto;
+        margin-right: auto;
+		
 	}
 	
 	.email-form label span{
