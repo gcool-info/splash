@@ -132,11 +132,10 @@ body {
 		z-index: 20;
 		position: relative;
 		top:-375px;
-		margin-top:auto;
 	}
 	
 	.email-form {
-		font-size: 20px;
+		font-size: 16px;
 	    text-align: center;
 		width: 300px;
 		margin-left: auto;
@@ -162,7 +161,7 @@ body {
 	}
 	
 	.luggage {
-		font-size: 30px;
+		font-size: 35px;
 	}
 	
 	.raden-logo {
