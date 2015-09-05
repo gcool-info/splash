@@ -17,7 +17,7 @@ $(document).ready(function() {
 			$.ajax({
 			    url: 'regUser.php',
 			    type: 'GET',
-			    data: 'email='+emailAddress,
+			    data: 'email='+encodeURIComponent(emailAddress),
 			    success: function(data) {
 				  //called when successful
 				  console.log("User Successfully Registered"+data);
