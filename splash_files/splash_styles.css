@@ -95,8 +95,8 @@ body {
 }
 
 .email-form #subscribe {
-	left:-5px;
-	top:-1px;
+	/*left:-5px;
+	top:-1px;*/
 	font-family: akkurat, Arial, sans-serif;
 }
 
