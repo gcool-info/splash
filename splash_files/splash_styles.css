@@ -97,7 +97,7 @@ body {
 .email-form #subscribe {
 	left:-5px;
 	top:-1px;
-	font-family: akkurat bold, Arial, sans-serif;
+	font-family: akkurat, Arial, sans-serif;
 }
 
 .email-form #email {
@@ -131,7 +131,7 @@ body {
 	.test-layer {
 		z-index: 20;
 		position: relative;
-		top:-375px;
+		top:-395px;
 	}
 	
 	.email-form {
