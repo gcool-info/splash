@@ -29,7 +29,6 @@
          url('font/akkurat_regular-custom.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 body {
 	font-family: akkurat light, Arial, sans-serif;
@@ -73,7 +72,7 @@ body {
 .luggage {
 	color: #FFF;
 	text-align: center;	
-	font-size: 50px;
+	font-size: 42px;
 }
 
 .email-form {
