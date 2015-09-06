@@ -21,7 +21,7 @@ $(document).ready(function() {
 			    success: function(data) {
 				  //called when successful
 				  console.log("User Successfully Registered"+data);
-				  $( ".email-form" ).html("You have Successfully Registered");
+				  $( ".email-form" ).html("You have successfully registered");
 
 			    },
 			    error: function(e) {
