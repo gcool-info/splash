@@ -66,13 +66,14 @@ body {
 .test-layer {
 	z-index: 20;
 	position: relative;
-	top:-550px;
+	top:-500px;
 }
 
 .luggage {
 	color: #FFF;
 	text-align: center;	
 	font-size: 42px;
+	padding-bottom: 45px;
 }
 
 .email-form {
@@ -115,7 +116,7 @@ body {
 
 .raden-logo {
 	position: relative;
-	top: 200px;
+	top: 125px;
 	text-align: center;
 }
 
@@ -124,7 +125,13 @@ body {
 	font-size: 20px;
 	text-align: center;
 }
-
+@media screen and (max-width:991px){
+     .raden-logo {
+		position: relative;
+		top: 235px;
+		text-align: center;
+	}
+}
 @media screen and (max-width:580px){
 	
 	.test-layer {
@@ -162,25 +169,14 @@ body {
 	.luggage {
 		font-size: 35px;
 	}
-	
 	.raden-logo {
 		position: relative;
-		top: 100px;
+		top: 95px;
 		text-align: center;
 	}
 	
 }
 
-@media screen and (max-width: 375px) {
-	
-	.email-form {
-		text-align: center;
-		width: 300px;
-		position: relative;
-		left: 25px;
-	}
-	
-}
 
 @media screen and (max-width:320px) {
 	.email-form {
