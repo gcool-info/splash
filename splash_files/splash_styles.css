@@ -45,17 +45,19 @@ body {
 }
 
 .footer {
-	background: #fff;
+	background: #000;
+	
 }
 
 .footer-links {
 	padding: 10px 0px;
 	text-align: center;
 	height: auto;
+	color: #fff;
 }
 
 .footer-links a {
-	color: #494949;
+	color: #fff;
 	font-size: 20px;
 }
 
@@ -126,7 +128,7 @@ body {
 @media screen and (max-width:991px){
      .raden-logo {
 		position: relative;
-		top: 235px;
+		top: 135px;
 		text-align: center;
 	}
 }
@@ -169,7 +171,7 @@ body {
 	}
 	.raden-logo {
 		position: relative;
-		top: 95px;
+		top: 55px;
 		text-align: center;
 	}
 	
