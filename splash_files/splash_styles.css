@@ -30,52 +30,28 @@
     font-weight: normal;
     font-style: normal;
 }
+html{
+    height:100%;
+}
 body {
 	font-family: akkurat light, Arial, sans-serif;
-	max-height: 750px;
 	background-color:black;
+	height:100%;
 }
-
-.container-fluid {
-	max-width: 1024px;
-}
-
-.main-body {
-	background: #000;
-}
-
-.footer {
-	background: #000;
-	
-}
-
-.footer-links {
-	padding: 10px 0px;
-	text-align: center;
-	height: auto;
-	color: #fff;
-}
-
-.footer-links a {
-	color: #fff;
-	font-size: 20px;
-}
-
 #contact-us {
 	/*padding-right: 75px;*/
 }
 
-.test-layer {
+.highZLayer {
 	z-index: 20;
 	position: relative;
 	top:-500px;
 }
-
 .luggage {
 	color: #FFF;
 	text-align: center;	
 	font-size: 42px;
-	padding-bottom: 45px;
+	padding-bottom: 30px;
 }
 
 .email-form {
@@ -112,11 +88,12 @@ body {
 	border: none;
 	color: #FFF;
 	height: 40px;
+	margin-top:10px;
 }
 
 .raden-logo {
 	position: relative;
-	top: 125px;
+	top: 115px;
 	text-align: center;
 }
 
@@ -143,7 +120,6 @@ body {
 	.email-form {
 		font-size: 16px;
 	    text-align: center;
-		width: 300px;
 		margin-left: auto;
         margin-right: auto;
 		
@@ -196,3 +172,15 @@ body {
 		top: 65px;
 	}
 }
+/*
+.footer-links {
+	padding: 10px 0px;
+	text-align: center;
+	height: auto;
+	color: #fff;
+}
+.footer-links a {
+	color: #fff;
+	font-size: 20px;
+}
+*/
