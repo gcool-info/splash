@@ -47,9 +47,9 @@ body {
 .highZLayer {
 	z-index: 20;
     top: 50%;
-    height: 6em;
-    margin-top: -3em;
-	position: absolute;
+    height: 250px;
+    margin-top: -125px;
+	position: fixed;
 	text-align:center;	
 	width:100%;
 }
@@ -69,7 +69,7 @@ body {
 
 .email-form p{
 	display: block;
-	font-family: akkurat, Arial, sans-serif;
+	font-family: akkurat light, Arial, sans-serif;
 }
 
 .email-form label {
@@ -77,7 +77,7 @@ body {
 	color: #fff;
 }
 .si-label {
-	font-size: 18px;
+	font-size: 14px;
 	font-family: akkurat light, Arial, sans-serif;
 }
 
@@ -108,6 +108,22 @@ body {
 	color:#f00;
 	font-size: 16px;
 	text-align: center;
+}
+
+.landscape{
+    display:block;
+}
+.portrait{
+    display:none;
+}
+
+@media screen and (orientation: portrait){
+    .portrait{
+        display:block;
+    }
+    .landscape{
+        display:none;
+    }
 }
 
 @media screen and (max-width:650px){
