@@ -41,16 +41,23 @@ body {
 #contact-us {
 	/*padding-right: 75px;*/
 }
-
+.main-body {
+    padding-top:20px;
+}
 .highZLayer {
 	z-index: 20;
-	position: relative;
-	top:-500px;
+    top: 50%;
+    height: 6em;
+    margin-top: -3em;
+	position: absolute;
+	text-align:center;	
+	width:100%;
 }
+
 .luggage {
 	color: #FFF;
 	text-align: center;	
-	font-size: 42px;
+	font-size: 36px;
 	padding-bottom: 30px;
 }
 
@@ -62,6 +69,7 @@ body {
 
 .email-form p{
 	display: block;
+	font-family: akkurat, Arial, sans-serif;
 }
 
 .email-form label {
@@ -69,11 +77,12 @@ body {
 	color: #fff;
 }
 .si-label {
-	padding-right:12px;
+	font-size: 18px;
+	font-family: akkurat light, Arial, sans-serif;
 }
 
 .email-form #subscribe {
-	font-family: akkurat, Arial, sans-serif;
+	font-family: akkurat light, Arial, sans-serif;
 }
 
 .email-form #email {
@@ -91,96 +100,53 @@ body {
 	margin-top:10px;
 }
 
-.raden-logo {
-	position: relative;
-	top: 115px;
-	text-align: center;
+.radenlogo {
+	padding-top:60px;
 }
 
 #error {
 	color:#f00;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 }
-@media screen and (max-width:991px){
-     .raden-logo {
-		position: relative;
-		top: 135px;
-		text-align: center;
-	}
-}
-@media screen and (max-width:580px){
-	
-	.test-layer {
-		z-index: 20;
-		position: relative;
-		top:-395px;
-	}
-	
+
+@media screen and (max-width:650px){
+	.luggage {
+		 font-size: 28px;
+		 padding-bottom: 20px;
+	 }
 	.email-form {
 		font-size: 16px;
-	    text-align: center;
-		margin-left: auto;
-        margin-right: auto;
-		
 	}
-	
 	.email-form label span{
 		padding-bottom: 10px;
 	}
-	
 	.email-form label{
 		padding-bottom: 10px;
 	}
 	
-	.email-form #subscribe {
-		position:relative;
-		left:0;
-		top:0;
-	}
-	.email-form p{
-		display: block;
-	}
-	
-	.luggage {
-		font-size: 35px;
-	}
-	.raden-logo {
-		position: relative;
-		top: 55px;
-		text-align: center;
-	}
-	
 }
-
-
+@media screen and (max-width:500px){
+	.luggage {
+		 font-size: 20px;
+		 padding-bottom: 15px;
+	 }
+	 .email-form {
+		font-size: 14px;
+	 }
+	 .si-label{
+	    font-size: 14px;
+	 }
+}
 @media screen and (max-width:320px) {
 	.email-form {
-		text-align: center;
-		width: 300px;
-		position: relative;
-		left: 0;
-		top: 60px;
+		font-size: 12px;
 	}
-	
-	.footer-links a {
-		font-size: 16px;
+	.si-label{
+	    font-size: 12px;
 	}
-	
 	.luggage {
-		position: relative;
-		top: 65px;
-	}
+		 font-size: 20px;
+		 padding-bottom: 10px;
+	 }
 }
-/*
-.footer-links {
-	padding: 10px 0px;
-	text-align: center;
-	height: auto;
-	color: #fff;
-}
-.footer-links a {
-	color: #fff;
-	font-size: 20px;
-}
-*/
