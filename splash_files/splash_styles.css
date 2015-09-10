@@ -35,6 +35,7 @@ body {
 	font-family: akkurat light, Arial, sans-serif;
 	background-color:black;
 	height:100%;
+	color:white;
 }
 .main-body {
     padding-top:20px;
@@ -49,14 +50,12 @@ body {
 	width:100%;
 }
 .luggage {
-	color: #FFF;
 	text-align: center;	
 	font-size: 36px;
 	padding-bottom: 30px;
 }
 .email-form {
 	text-align: center;
-	color:#fff;
 	font-size: 14px;
 }
 .email-form p{
@@ -65,13 +64,9 @@ body {
 }
 .email-form label {
 	margin: 0;
-	color: #fff;
 }
 .si-label {
 	font-size: 14px;
-	font-family: akkurat light, Arial, sans-serif;
-}
-.email-form #subscribe {
 	font-family: akkurat light, Arial, sans-serif;
 }
 .email-form #email {
@@ -81,9 +76,9 @@ body {
 	padding-left:12px;
 }
 .email-form #subscribe {
+    font-family: akkurat light, Arial, sans-serif;
 	background-color: #696969;
 	border: none;
-	color: #FFF;
 	height: 40px;
 	margin-top:10px;
 }
