@@ -7,7 +7,6 @@
          url('font/akkurat_bold-custom.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'akkurat light';
@@ -18,7 +17,6 @@
          url('font/akkurat_light_regular-custom.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'akkurat';
@@ -38,40 +36,33 @@ body {
 	background-color:black;
 	height:100%;
 }
-#contact-us {
-	/*padding-right: 75px;*/
-}
 .main-body {
     padding-top:20px;
 }
 .highZLayer {
 	z-index: 20;
     top: 50%;
-    height: 250px;
-    margin-top: -125px;
+    height: 310px;
+    margin-top: -155px;
 	position: fixed;
 	text-align:center;	
 	width:100%;
 }
-
 .luggage {
 	color: #FFF;
 	text-align: center;	
 	font-size: 36px;
 	padding-bottom: 30px;
 }
-
 .email-form {
 	text-align: center;
 	color:#fff;
 	font-size: 14px;
 }
-
 .email-form p{
 	display: block;
 	font-family: akkurat light, Arial, sans-serif;
 }
-
 .email-form label {
 	margin: 0;
 	color: #fff;
@@ -80,18 +71,15 @@ body {
 	font-size: 14px;
 	font-family: akkurat light, Arial, sans-serif;
 }
-
 .email-form #subscribe {
 	font-family: akkurat light, Arial, sans-serif;
 }
-
 .email-form #email {
 	width: 247px;
 	height: 40px;
 	color: #494949;
 	padding-left:12px;
 }
-
 .email-form #subscribe {
 	background-color: #696969;
 	border: none;
@@ -99,24 +87,20 @@ body {
 	height: 40px;
 	margin-top:10px;
 }
-
 .radenlogo {
 	padding-top:60px;
 }
-
 #error {
 	color:#f00;
 	font-size: 16px;
 	text-align: center;
 }
-
 .landscape{
     display:block;
 }
 .portrait{
     display:none;
 }
-
 @media screen and (orientation: portrait){
     .portrait{
         display:block;
@@ -125,7 +109,19 @@ body {
         display:none;
     }
 }
-
+@media screen and (max-height:400px){
+    .luggage{
+        padding-bottom: 0px;
+        margin-bottom: 0px !important;
+    }
+    .radenlogo {
+	    padding-top:10px;
+    }
+    .highZLayer {
+		height: 214px;
+		margin-top: -110px;
+	}
+}
 @media screen and (max-width:650px){
 	.luggage {
 		 font-size: 28px;
