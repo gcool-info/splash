@@ -49,6 +49,11 @@ body {
 	text-align:center;	
 	width:100%;
 }
+.blur{
+	filter: url(blur.svg#blur);
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
 .luggage {
 	text-align: center;	
 	font-size: 36px;
