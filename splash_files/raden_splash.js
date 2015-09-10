@@ -6,11 +6,13 @@ $(document).ready(function() {
   if(rand==1){
       $('div.portrait').html('<img src="./splash_files/raden_bg_768_orangeBG.png" class="img-responsive center-block">');
       $('div.landscape').html('<img src="./splash_files/shorty-bag-orangeBG.png" class="img-responsive center-block">');
+      $('.subButton').css("background-color",'#D78262');
   }
   if(rand==2){
       $('body').css("color", '#494949');
       $('.radenlogo').attr('src','./splash_files/bluebg-grey-logo.png');
       $('.subButton').css("color",'#FFF');
+      $('.subButton').css("background-color",'#75919C');
       $('div.portrait').html('<img src="./splash_files/raden_bg_768_blueBG.png" class="img-responsive center-block">');
       $('div.landscape').html('<img src="./splash_files/shorty-bag-blueBG.png" class="img-responsive center-block">');
   }
