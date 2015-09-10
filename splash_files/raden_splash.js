@@ -24,13 +24,9 @@ $(document).ready(function() {
 	
 	$('#subscribe').click(function(event) {
 		event.preventDefault();
-		console.log("subscribe clicked");
-		
 		var emailAddress = $('#email').val();
-		console.log(emailAddress);
 		
 		if (validateEmail(emailAddress)) {
-			$('#error').addClass('hidden');
 			$.ajax({
 			    url: 'regUser.php',
 			    type: 'GET',
@@ -50,8 +46,7 @@ $(document).ready(function() {
 		
 		}
 		else {
-			//alert("Please enter a valid email address");
-			$('#error').removeClass('hidden');
+			$('#error').show("fast");
 		}
 	});
 	

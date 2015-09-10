@@ -63,7 +63,7 @@ body {
 	text-align: center;
 	font-size: 14px;
 }
-.email-form p{
+.email-form p {
 	display: block;
 	font-family: akkurat light, Arial, sans-serif;
 	font-weight: 400;
@@ -92,25 +92,29 @@ body {
 	padding-top:60px;
 }
 #error {
-	color:#f00;
-	font-size: 16px;
-	text-align: center;
+	width: 247px;
+    height: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    display: none;
 }
-.landscape{
+.landscape {
     display:block;
 }
-.portrait{
+.portrait {
     display:none;
 }
-.simplebtn:active,.simplebtn:focus{
+.simplebtn:active,.simplebtn:focus {
     outline-color:white !important;
     color: white;
     outline: 1px;
 }
-.simplebtn:hover{
+.simplebtn:hover {
     color: white;
 }
-.simpleform{
+.simpleform {
 	border: none;
 }
 @media screen and (orientation: portrait){
