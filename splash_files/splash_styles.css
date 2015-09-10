@@ -96,6 +96,17 @@ body {
 .portrait{
     display:none;
 }
+.simplebtn:active,.simplebtn:focus{
+    outline-color:white !important;
+    color: white;
+    outline: 1px;
+}
+.simplebtn:hover{
+    color: white;
+}
+.simpleform{
+	border: none;
+}
 @media screen and (orientation: portrait){
     .portrait{
         display:block;
