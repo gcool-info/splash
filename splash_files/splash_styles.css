@@ -66,6 +66,7 @@ body {
 .email-form p{
 	display: block;
 	font-family: akkurat light, Arial, sans-serif;
+	font-weight: 400;
 }
 .email-form label {
 	margin: 0;
