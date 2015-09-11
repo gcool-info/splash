@@ -31,19 +31,27 @@
 		<script src="./splash_files/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="main-body landscape">
+		<div class="main-body landscape blur">
 			<img src="./splash_files/shorty-bag.png" class="img-responsive center-block">
 		</div>
-		<div class="main-body portrait">
+		<div class="main-body portrait blur">
 			<img src="./splash_files/raden_bg_768.png" class="img-responsive center-block">
 		</div>
 		<div class="highZLayer">
-			<p class="luggage">Luggage, lifted.</p>
-			<p id="error" class="hidden">Invalid email address</p>
-			<form class="email-form">
-				<label for="email-label"><p class="si-label">Stay Informed</p> <input type="text" placeholder="Email" name="email-label" id="email"></label><BR>
-				<button id="subscribe" class="subButton">Subscribe</button>
-			</form>
+			<div class="data-entry">
+				<h1>Luggage, lifted.</h1>
+				<div id="error" class="alert alert-danger" role="alert">
+				  Your email seems to be incorrect
+				</div>
+				<form class="email-form">
+					<label for="email-label"><p class="si-label">Stay Informed</p> <input type="text" placeholder="Email" name="email-label" id="email" class="form-control simpleform"></label><BR>
+					<button id="subscribe" class="btn simplebtn subButton">Subscribe</button>
+				</form>
+			</div>
+			<div class="success-confirmation">
+				<h1>Thank You.</h1>
+				<p id="resubmit" class="si-label">Add another email</p>
+			</div>
 		    <img class="radenlogo" src="./splash_files/raden_logo.png">
 		</div> 
 		<script src="./splash_files/raden_splash.js"></script>

@@ -6,11 +6,13 @@ $(document).ready(function() {
   if(rand==1){
       $('div.portrait').html('<img src="./splash_files/raden_bg_768_orangeBG.png" class="img-responsive center-block">');
       $('div.landscape').html('<img src="./splash_files/shorty-bag-orangeBG.png" class="img-responsive center-block">');
+      $('.subButton').css("background-color",'#D78262');
   }
   if(rand==2){
       $('body').css("color", '#494949');
       $('.radenlogo').attr('src','./splash_files/bluebg-grey-logo.png');
       $('.subButton').css("color",'#FFF');
+      $('.subButton').css("background-color",'#75919C');
       $('div.portrait').html('<img src="./splash_files/raden_bg_768_blueBG.png" class="img-responsive center-block">');
       $('div.landscape').html('<img src="./splash_files/shorty-bag-blueBG.png" class="img-responsive center-block">');
   }
@@ -22,22 +24,22 @@ $(document).ready(function() {
 	
 	$('#subscribe').click(function(event) {
 		event.preventDefault();
-		console.log("subscribe clicked");
-		
 		var emailAddress = $('#email').val();
-		console.log(emailAddress);
 		
 		if (validateEmail(emailAddress)) {
-			$('#error').addClass('hidden');
 			$.ajax({
 			    url: 'regUser.php',
 			    type: 'GET',
 			    data: 'email='+encodeURIComponent(emailAddress),
 			    success: function(data) {
-				  //called when successful
-				  console.log("User Successfully Registered"+data);
-				  $( ".email-form" ).html("You have successfully registered");
-
+					//called when successful
+				  	$( ".data-entry").animate({
+						opacity: 0.0
+					});
+					$( ".success-confirmation").animate({
+						opacity: 1.0,
+						top: "-200px"
+					});
 			    },
 			    error: function(e) {
 				   //called when there is an error
@@ -48,9 +50,17 @@ $(document).ready(function() {
 		
 		}
 		else {
-			//alert("Please enter a valid email address");
-			$('#error').removeClass('hidden');
+			$('#error').show("fast");
 		}
 	});
 	
+	$('#resubmit').click(function(event) {
+		$( ".data-entry").animate({
+			opacity: 1.0
+		});
+		$( ".success-confirmation").animate({
+			opacity: 0.0,
+			top: "-220px"
+		});
+	});
 });
