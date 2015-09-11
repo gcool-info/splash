@@ -32,10 +32,14 @@ $(document).ready(function() {
 			    type: 'GET',
 			    data: 'email='+encodeURIComponent(emailAddress),
 			    success: function(data) {
-				  //called when successful
-				  console.log("User Successfully Registered"+data);
-				  $( ".email-form" ).html("You have successfully registered");
-
+					//called when successful
+				  	$( ".data-entry").animate({
+						opacity: 0.0
+					});
+					$( ".success-confirmation").animate({
+						opacity: 1.0,
+						top: "-200px"
+					});
 			    },
 			    error: function(e) {
 				   //called when there is an error
@@ -50,4 +54,13 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('#resubmit').click(function(event) {
+		$( ".data-entry").animate({
+			opacity: 1.0
+		});
+		$( ".success-confirmation").animate({
+			opacity: 0.0,
+			top: "-220px"
+		});
+	});
 });

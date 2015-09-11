@@ -37,6 +37,11 @@ body {
 	height:100%;
 	color:white;
 }
+h1 {
+	text-align: center;	
+	font-size: 36px;
+	padding-bottom: 30px;
+}
 .main-body {
     padding-top:20px;
 }
@@ -53,11 +58,6 @@ body {
 	filter: url(blur.svg#blur);
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
-}
-.luggage {
-	text-align: center;	
-	font-size: 36px;
-	padding-bottom: 30px;
 }
 .email-form {
 	text-align: center;
@@ -117,6 +117,15 @@ body {
 .simpleform {
 	border: none;
 }
+.success-confirmation {
+	position: relative;
+	top: -220px;
+	opacity: 0.0;
+}
+#resubmit {
+	cursor: pointer;
+	text-decoration: underline;
+}
 @media screen and (orientation: portrait){
     .portrait{
         display:block;
@@ -126,7 +135,7 @@ body {
     }
 }
 @media screen and (max-height:400px){
-    .luggage{
+    h1{
         padding-bottom: 0px;
         margin-bottom: 0px !important;
     }
@@ -139,7 +148,7 @@ body {
 	}
 }
 @media screen and (max-width:650px){
-	.luggage {
+	h1 {
 		 font-size: 28px;
 		 padding-bottom: 20px;
 	 }
@@ -155,7 +164,7 @@ body {
 	
 }
 @media screen and (max-width:500px){
-	.luggage {
+	h1 {
 		 font-size: 20px;
 		 padding-bottom: 15px;
 	 }
@@ -173,7 +182,7 @@ body {
 	.si-label{
 	    font-size: 12px;
 	}
-	.luggage {
+	h1 {
 		 font-size: 20px;
 		 padding-bottom: 10px;
 	 }
